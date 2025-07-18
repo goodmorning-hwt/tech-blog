@@ -1,0 +1,15 @@
+baseURL = "https://goodmorning-hwt.github.io/tech-blog/"
+languageCode = "zh-cn"
+title = "我的技术笔记"
+theme = "PaperMod"
+
+[params]
+  # 主页的标题和描述
+  [params.homeInfoParams]
+    Title = "你好，我是 何文韬 👋"
+    Content = "存放我的笔记的地方。"
+
+  # 社交链接，可选
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/goodmorning-hwt"
