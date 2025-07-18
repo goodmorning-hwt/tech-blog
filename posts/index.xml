@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 18 Jul 2025 18:54:13 +0800</lastBuildDate>
     <atom:link href="https://goodmorning-hwt.github.io/tech-blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
+      <title>我的第一篇文章</title>
       <link>https://goodmorning-hwt.github.io/tech-blog/posts/my-first-post/</link>
       <pubDate>Fri, 18 Jul 2025 18:54:13 +0800</pubDate>
       <guid>https://goodmorning-hwt.github.io/tech-blog/posts/my-first-post/</guid>
-      <description></description>
+      <description>&lt;p&gt;这是我第一篇文章的内容。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
