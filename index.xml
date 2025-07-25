@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>我的技术笔记</title>
-    <link>http://localhost:1313/tech-blog/</link>
+    <link>https://goodmorning-hwt.github.io/tech-blog/</link>
     <description>Recent content on 我的技术笔记</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 25 Jul 2025 09:54:47 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tech-blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://goodmorning-hwt.github.io/tech-blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Convert Jupyter Notebook to Markdown</title>
-      <link>http://localhost:1313/tech-blog/posts/convert-jupyter-notebook-to-markdown/</link>
+      <link>https://goodmorning-hwt.github.io/tech-blog/posts/convert-jupyter-notebook-to-markdown/</link>
       <pubDate>Fri, 25 Jul 2025 09:54:47 +0800</pubDate>
-      <guid>http://localhost:1313/tech-blog/posts/convert-jupyter-notebook-to-markdown/</guid>
+      <guid>https://goodmorning-hwt.github.io/tech-blog/posts/convert-jupyter-notebook-to-markdown/</guid>
       <description>&lt;p&gt;将Jupyter Notebook（.ipynb文件）转换为Markdown（.md文件）的工具有很多，其中最常用和最官方的工具是 &lt;strong&gt;nbconvert&lt;/strong&gt;。除了nbconvert之外，还有一些其他的命令行工具、VS Code插件和在线转换器可供选择。&lt;/p&gt;
 &lt;h3 id=&#34;1-使用官方工具-nbconvert&#34;&gt;1. 使用官方工具 &lt;code&gt;nbconvert&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;nbconvert&lt;/code&gt; 是一个由Jupyter社区开发的强大工具，可以将Jupyter Notebook转换为多种格式，包括Markdown、HTML、PDF、LaTeX等。它可以通过命令行或Python脚本来使用。&lt;/p&gt;
@@ -67,9 +67,9 @@
     </item>
     <item>
       <title>我的第一篇文章</title>
-      <link>http://localhost:1313/tech-blog/posts/my-first-post/</link>
+      <link>https://goodmorning-hwt.github.io/tech-blog/posts/my-first-post/</link>
       <pubDate>Fri, 18 Jul 2025 18:54:13 +0800</pubDate>
-      <guid>http://localhost:1313/tech-blog/posts/my-first-post/</guid>
+      <guid>https://goodmorning-hwt.github.io/tech-blog/posts/my-first-post/</guid>
       <description>&lt;p&gt;这是我第一篇文章的内容。&lt;/p&gt;</description>
     </item>
   </channel>

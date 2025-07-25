@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tech-blog/en/posts/my-first-post/</loc>
+    <loc>https://goodmorning-hwt.github.io/tech-blog/en/posts/my-first-post/</loc>
     <lastmod>2025-07-18T18:54:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tech-blog/posts/my-first-post/"
+                href="https://goodmorning-hwt.github.io/tech-blog/posts/my-first-post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/tech-blog/en/posts/my-first-post/"
+                href="https://goodmorning-hwt.github.io/tech-blog/en/posts/my-first-post/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tech-blog/en/</loc>
+    <loc>https://goodmorning-hwt.github.io/tech-blog/en/</loc>
     <lastmod>2025-07-18T18:54:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tech-blog/"
+                href="https://goodmorning-hwt.github.io/tech-blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/tech-blog/en/"
+                href="https://goodmorning-hwt.github.io/tech-blog/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tech-blog/en/posts/</loc>
+    <loc>https://goodmorning-hwt.github.io/tech-blog/en/posts/</loc>
     <lastmod>2025-07-18T18:54:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tech-blog/posts/"
+                href="https://goodmorning-hwt.github.io/tech-blog/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/tech-blog/en/posts/"
+                href="https://goodmorning-hwt.github.io/tech-blog/en/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tech-blog/en/categories/</loc>
+    <loc>https://goodmorning-hwt.github.io/tech-blog/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tech-blog/categories/"
+                href="https://goodmorning-hwt.github.io/tech-blog/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/tech-blog/en/categories/"
+                href="https://goodmorning-hwt.github.io/tech-blog/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tech-blog/en/tags/</loc>
+    <loc>https://goodmorning-hwt.github.io/tech-blog/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tech-blog/tags/"
+                href="https://goodmorning-hwt.github.io/tech-blog/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/tech-blog/en/tags/"
+                href="https://goodmorning-hwt.github.io/tech-blog/en/tags/"
                 />
   </url>
 </urlset>

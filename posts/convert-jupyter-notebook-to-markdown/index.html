@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh" dir="auto">
 
-<head><script src="/tech-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tech-blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Convert Jupyter Notebook to Markdown | 我的技术笔记</title>
 <meta name="keywords" content="">
 <meta name="description" content="将Jupyter Notebook（.ipynb文件）转换为Markdown（.md文件）的工具有很多，其中最常用和最官方的工具是 nbconvert。除了nbconvert之外，还有一些其他的命令行工具、VS Code插件和在线转换器可供选择。
@@ -59,16 +59,16 @@ b. 在Jupyter Notebook/Lab中直接导出
 c. 使用Python脚本
 你还可以在Python脚本中调用nbconvert库来实现转换，这在自动化工作流程中非常有用。">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/tech-blog/posts/convert-jupyter-notebook-to-markdown/">
+<link rel="canonical" href="https://goodmorning-hwt.github.io/tech-blog/posts/convert-jupyter-notebook-to-markdown/">
 <link crossorigin="anonymous" href="/tech-blog/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/tech-blog/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/tech-blog/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/tech-blog/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/tech-blog/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/tech-blog/safari-pinned-tab.svg">
+<link rel="icon" href="https://goodmorning-hwt.github.io/tech-blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://goodmorning-hwt.github.io/tech-blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://goodmorning-hwt.github.io/tech-blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://goodmorning-hwt.github.io/tech-blog/apple-touch-icon.png">
+<link rel="mask-icon" href="https://goodmorning-hwt.github.io/tech-blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="http://localhost:1313/tech-blog/posts/convert-jupyter-notebook-to-markdown/">
+<link rel="alternate" hreflang="zh" href="https://goodmorning-hwt.github.io/tech-blog/posts/convert-jupyter-notebook-to-markdown/">
 <noscript>
     <style>
         #theme-toggle,
@@ -105,7 +105,128 @@ c. 使用Python脚本
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://goodmorning-hwt.github.io/tech-blog/posts/convert-jupyter-notebook-to-markdown/">
+  <meta property="og:site_name" content="我的技术笔记">
+  <meta property="og:title" content="Convert Jupyter Notebook to Markdown">
+  <meta property="og:description" content="将Jupyter Notebook（.ipynb文件）转换为Markdown（.md文件）的工具有很多，其中最常用和最官方的工具是 nbconvert。除了nbconvert之外，还有一些其他的命令行工具、VS Code插件和在线转换器可供选择。
+1. 使用官方工具 nbconvert nbconvert 是一个由Jupyter社区开发的强大工具，可以将Jupyter Notebook转换为多种格式，包括Markdown、HTML、PDF、LaTeX等。它可以通过命令行或Python脚本来使用。
+a. 命令行使用 这是最直接和常用的方法。首先，你需要确保已经安装了nbconvert。通常，如果你安装了Jupyter，nbconvert也会被一并安装。如果没有，可以通过pip进行安装：
+1 pip install nbconvert 安装后，在你的终端或命令行中，进入到Jupyter Notebook文件所在的目录，然后运行以下命令：
+1 jupyter nbconvert --to markdown your_notebook_name.ipynb 这条命令会生成一个名为 your_notebook_name.md 的Markdown文件。这个文件会包含你的Markdown单元格内容以及代码单元格和其输出。
+一些常用选项:
+--output-dir: 指定输出文件的目录。 --output: 指定输出文件的名称。 --no-input: 在输出中不包含代码单元格。 b. 在Jupyter Notebook/Lab中直接导出 你也可以在Jupyter Notebook或JupyterLab的界面中直接进行转换：
+在Jupyter Notebook中:
+打开你的 .ipynb 文件。 点击菜单栏的 “File” -&gt; “Download as”。 选择 “Markdown (.md)&#34;。 在JupyterLab中:
+打开你的 .ipynb 文件。 点击菜单栏的 “File” -&gt; “Export Notebook As…&#34;。 选择 “Export to Markdown”。 c. 使用Python脚本 你还可以在Python脚本中调用nbconvert库来实现转换，这在自动化工作流程中非常有用。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-25T09:54:47+08:00">
+    <meta property="article:modified_time" content="2025-07-25T09:54:47+08:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Convert Jupyter Notebook to Markdown">
+<meta name="twitter:description" content="将Jupyter Notebook（.ipynb文件）转换为Markdown（.md文件）的工具有很多，其中最常用和最官方的工具是 nbconvert。除了nbconvert之外，还有一些其他的命令行工具、VS Code插件和在线转换器可供选择。
+1. 使用官方工具 nbconvert
+nbconvert 是一个由Jupyter社区开发的强大工具，可以将Jupyter Notebook转换为多种格式，包括Markdown、HTML、PDF、LaTeX等。它可以通过命令行或Python脚本来使用。
+a. 命令行使用
+这是最直接和常用的方法。首先，你需要确保已经安装了nbconvert。通常，如果你安装了Jupyter，nbconvert也会被一并安装。如果没有，可以通过pip进行安装：
+
+
+1
+
+
+pip install nbconvert
+
+
+安装后，在你的终端或命令行中，进入到Jupyter Notebook文件所在的目录，然后运行以下命令：
+
+
+1
+
+
+jupyter nbconvert --to markdown your_notebook_name.ipynb
+
+
+这条命令会生成一个名为 your_notebook_name.md 的Markdown文件。这个文件会包含你的Markdown单元格内容以及代码单元格和其输出。
+一些常用选项:
+
+--output-dir: 指定输出文件的目录。
+--output: 指定输出文件的名称。
+--no-input: 在输出中不包含代码单元格。
+
+b. 在Jupyter Notebook/Lab中直接导出
+你也可以在Jupyter Notebook或JupyterLab的界面中直接进行转换：
+
+
+在Jupyter Notebook中:
+
+打开你的 .ipynb 文件。
+点击菜单栏的 &ldquo;File&rdquo; -&gt; &ldquo;Download as&rdquo;。
+选择 &ldquo;Markdown (.md)&quot;。
+
+
+
+在JupyterLab中:
+
+打开你的 .ipynb 文件。
+点击菜单栏的 &ldquo;File&rdquo; -&gt; &ldquo;Export Notebook As&hellip;&quot;。
+选择 &ldquo;Export to Markdown&rdquo;。
+
+
+
+c. 使用Python脚本
+你还可以在Python脚本中调用nbconvert库来实现转换，这在自动化工作流程中非常有用。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://goodmorning-hwt.github.io/tech-blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Convert Jupyter Notebook to Markdown",
+      "item": "https://goodmorning-hwt.github.io/tech-blog/posts/convert-jupyter-notebook-to-markdown/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Convert Jupyter Notebook to Markdown",
+  "name": "Convert Jupyter Notebook to Markdown",
+  "description": "将Jupyter Notebook（.ipynb文件）转换为Markdown（.md文件）的工具有很多，其中最常用和最官方的工具是 nbconvert。除了nbconvert之外，还有一些其他的命令行工具、VS Code插件和在线转换器可供选择。\n1. 使用官方工具 nbconvert nbconvert 是一个由Jupyter社区开发的强大工具，可以将Jupyter Notebook转换为多种格式，包括Markdown、HTML、PDF、LaTeX等。它可以通过命令行或Python脚本来使用。\na. 命令行使用 这是最直接和常用的方法。首先，你需要确保已经安装了nbconvert。通常，如果你安装了Jupyter，nbconvert也会被一并安装。如果没有，可以通过pip进行安装：\n1 pip install nbconvert 安装后，在你的终端或命令行中，进入到Jupyter Notebook文件所在的目录，然后运行以下命令：\n1 jupyter nbconvert --to markdown your_notebook_name.ipynb 这条命令会生成一个名为 your_notebook_name.md 的Markdown文件。这个文件会包含你的Markdown单元格内容以及代码单元格和其输出。\n一些常用选项:\n--output-dir: 指定输出文件的目录。 --output: 指定输出文件的名称。 --no-input: 在输出中不包含代码单元格。 b. 在Jupyter Notebook/Lab中直接导出 你也可以在Jupyter Notebook或JupyterLab的界面中直接进行转换：\n在Jupyter Notebook中:\n打开你的 .ipynb 文件。 点击菜单栏的 \u0026ldquo;File\u0026rdquo; -\u0026gt; \u0026ldquo;Download as\u0026rdquo;。 选择 \u0026ldquo;Markdown (.md)\u0026quot;。 在JupyterLab中:\n打开你的 .ipynb 文件。 点击菜单栏的 \u0026ldquo;File\u0026rdquo; -\u0026gt; \u0026ldquo;Export Notebook As\u0026hellip;\u0026quot;。 选择 \u0026ldquo;Export to Markdown\u0026rdquo;。 c. 使用Python脚本 你还可以在Python脚本中调用nbconvert库来实现转换，这在自动化工作流程中非常有用。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "将Jupyter Notebook（.ipynb文件）转换为Markdown（.md文件）的工具有很多，其中最常用和最官方的工具是 nbconvert。除了nbconvert之外，还有一些其他的命令行工具、VS Code插件和在线转换器可供选择。\n1. 使用官方工具 nbconvert nbconvert 是一个由Jupyter社区开发的强大工具，可以将Jupyter Notebook转换为多种格式，包括Markdown、HTML、PDF、LaTeX等。它可以通过命令行或Python脚本来使用。\na. 命令行使用 这是最直接和常用的方法。首先，你需要确保已经安装了nbconvert。通常，如果你安装了Jupyter，nbconvert也会被一并安装。如果没有，可以通过pip进行安装：\n1 pip install nbconvert 安装后，在你的终端或命令行中，进入到Jupyter Notebook文件所在的目录，然后运行以下命令：\n1 jupyter nbconvert --to markdown your_notebook_name.ipynb 这条命令会生成一个名为 your_notebook_name.md 的Markdown文件。这个文件会包含你的Markdown单元格内容以及代码单元格和其输出。\n一些常用选项:\n--output-dir: 指定输出文件的目录。 --output: 指定输出文件的名称。 --no-input: 在输出中不包含代码单元格。 b. 在Jupyter Notebook/Lab中直接导出 你也可以在Jupyter Notebook或JupyterLab的界面中直接进行转换：\n在Jupyter Notebook中:\n打开你的 .ipynb 文件。 点击菜单栏的 “File” -\u003e “Download as”。 选择 “Markdown (.md)\"。 在JupyterLab中:\n打开你的 .ipynb 文件。 点击菜单栏的 “File” -\u003e “Export Notebook As…\"。 选择 “Export to Markdown”。 c. 使用Python脚本 你还可以在Python脚本中调用nbconvert库来实现转换，这在自动化工作流程中非常有用。\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 import nbformat from nbconvert import MarkdownExporter def convert_notebook_to_markdown(notebook_path, output_path): \"\"\" 将Jupyter Notebook转换为Markdown文件。 :param notebook_path: 输入的.ipynb文件路径 :param output_path: 输出的.md文件路径 \"\"\" with open(notebook_path, 'r', encoding='utf-8') as f: nb = nbformat.read(f, as_version=4) markdown_exporter = MarkdownExporter() (body, resources) = markdown_exporter.from_notebook_node(nb) with open(output_path, 'w', encoding='utf-8') as f: f.write(body) # 使用示例 # convert_notebook_to_markdown('my_notebook.ipynb', 'my_notebook.md') 2. 其他工具和插件 除了nbconvert，还有一些其他的选择：\nipynb-to-md: 一个简单的命令行工具，专门用于将Jupyter Notebook转换为Markdown。它注重于生成干净、易读的Markdown文件。 Visual Studio Code 插件: 如果你使用VS Code作为你的编辑器，可以安装一些插件来方便地进行转换，例如 “Jupyter To Markdown”。通常，你只需在.ipynb文件上右键点击，然后选择转换选项即可。 在线转换器: 也有一些网站提供在线的.ipynb到.md的转换服务。你只需上传你的Notebook文件，网站就会为你生成一个可以下载的Markdown文件。但请注意，对于包含敏感数据或代码的Notebook，使用在线工具可能存在安全风险。 总结 对于大多数用户来说，nbconvert 是将Jupyter Notebook转换为Markdown的首选工具，因为它功能强大、灵活且是官方支持的。无论是通过命令行、Jupyter界面还是Python脚本，它都能很好地满足你的需求。如果你需要一个更轻量级的命令行工具，或者更喜欢在VS Code中进行操作，那么ipynb-to-md和相关的VS Code插件也是不错的选择。\n",
+  "wordCount" : "162",
+  "inLanguage": "zh",
+  "datePublished": "2025-07-25T09:54:47+08:00",
+  "dateModified": "2025-07-25T09:54:47+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://goodmorning-hwt.github.io/tech-blog/posts/convert-jupyter-notebook-to-markdown/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "我的技术笔记",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://goodmorning-hwt.github.io/tech-blog/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -123,7 +244,7 @@ c. 使用Python脚本
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/tech-blog/" accesskey="h" title="我的技术笔记 (Alt + H)">我的技术笔记</a>
+            <a href="https://goodmorning-hwt.github.io/tech-blog/" accesskey="h" title="我的技术笔记 (Alt + H)">我的技术笔记</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -147,7 +268,7 @@ c. 使用Python脚本
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="http://localhost:1313/tech-blog/en/" title="English"
+                        <a href="https://goodmorning-hwt.github.io/tech-blog/en/" title="English"
                             aria-label="English">En</a>
                     </li>
                 </ul>
@@ -289,7 +410,7 @@ c. 使用Python脚本
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/tech-blog/">我的技术笔记</a></span> · 
+        <span>&copy; 2025 <a href="https://goodmorning-hwt.github.io/tech-blog/">我的技术笔记</a></span> · 
 
     <span>
         Powered by
