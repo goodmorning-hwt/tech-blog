@@ -1,18 +1,36 @@
-# Hugo 生成的网站目录，这是最重要的忽略项
-/public/
+# ===================================================================
+# Whitelist .gitignore
+# 1. Ignore everything by default.
+# 1. 默认忽略所有内容。
+# ===================================================================
+*
 
-# Hugo 生成的资源缓存
-/resources/
+# ===================================================================
+# 2. Whitelist specific files in the root directory.
+# 2. 将根目录下的特定文件加入白名单。
+# ===================================================================
+# The .gitignore file itself should always be tracked.
+!/.gitignore
+# Project and theme configuration
+!/.gitmodules
+!/hugo.toml
+!/package.json
+!/package-lock.json
+# Project documentation
+!/README.md
 
-# Hugo 在 server 模式下生成的临时文件
-hugo_stats.json
+# ===================================================================
+# 3. Whitelist directories containing your source code.
+# 3. 将包含网站源码的文件夹加入白名单。
+# ===================================================================
+# NOTE: Un-ignoring a directory (`!/dirname/`) will also un-ignore
+# all of its contents and subdirectories.
+# 注意: 使用 `!/文件夹名/` 会将其中的所有文件和子文件夹都加入白名单。
 
-# 如果你使用了 npm 来安装 gh-pages 等工具
-/node_modules/
-
-# 操作系统自动生成的文件
-.DS_Store
-Thumbs.db
-
-# 临时或日志文件
-*.log
+# Hugo source directories
+!/content/
+!/archetypes/
+!/themes/
+!/layouts/
+!/static/
+!/data/
