@@ -14,10 +14,10 @@ A quick reminder for my future self on how to write, preview, and publish a new 
 
     ```bash
     # For an English post
-    hugo new en/posts/my-cool-post.md
+    npx hugo new posts/my-cool-post.en.md
 
     # For a Chinese post
-    hugo new zh/posts/my-cool-post.md
+    npx hugo new posts/my-cool-post.zh.md
     ```
 
 2.  **Edit the New File:**
