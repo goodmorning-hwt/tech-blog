@@ -27,3 +27,11 @@ defaultContentLanguage = "zh"
       [languages.en.params.homeInfoParams]
         Title = "Hi, I'm Wentao He 👋"
         Content = "A place for my notes."
+
+# 请将你的配置修改成这样
+[markup.highlight]
+  # 不要设置 style 这一项，把它留空，让主题来接管颜色
+  noClasses = false # 这一项必须是 false，主题才能通过 CSS 类名来应用样式
+  
+  # 其他选项可以按需保留，比如显示行号
+  lineNos = true
