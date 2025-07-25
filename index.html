@@ -2,26 +2,26 @@
 <html lang="zh" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.148.1"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.148.1"><script src="/tech-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=tech-blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>我的技术笔记</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://goodmorning-hwt.github.io/tech-blog/">
+<link rel="canonical" href="http://localhost:1313/tech-blog/">
 <link crossorigin="anonymous" href="/tech-blog/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://goodmorning-hwt.github.io/tech-blog/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://goodmorning-hwt.github.io/tech-blog/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://goodmorning-hwt.github.io/tech-blog/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://goodmorning-hwt.github.io/tech-blog/apple-touch-icon.png">
-<link rel="mask-icon" href="https://goodmorning-hwt.github.io/tech-blog/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/tech-blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/tech-blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/tech-blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/tech-blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/tech-blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://goodmorning-hwt.github.io/tech-blog/index.xml">
-<link rel="alternate" hreflang="zh" href="https://goodmorning-hwt.github.io/tech-blog/">
-<link rel="alternate" hreflang="en" href="https://goodmorning-hwt.github.io/tech-blog/en/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tech-blog/index.xml">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/tech-blog/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tech-blog/en/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,28 +58,7 @@
         }
 
     </style>
-</noscript><meta property="og:url" content="https://goodmorning-hwt.github.io/tech-blog/">
-  <meta property="og:site_name" content="我的技术笔记">
-  <meta property="og:title" content="我的技术笔记">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的技术笔记">
-<meta name="twitter:description" content="">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "我的技术笔记",
-  "url": "https://goodmorning-hwt.github.io/tech-blog/",
-  "description": "",
-  "logo": "https://goodmorning-hwt.github.io/tech-blog/favicon.ico",
-  "sameAs": [
-      "https://github.com/goodmorning-hwt"
-  ]
-}
-</script>
+</noscript>
 </head>
 
 <body class="list" id="top">
@@ -97,7 +76,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://goodmorning-hwt.github.io/tech-blog/" accesskey="h" title="我的技术笔记 (Alt + H)">我的技术笔记</a>
+            <a href="http://localhost:1313/tech-blog/" accesskey="h" title="我的技术笔记 (Alt + H)">我的技术笔记</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -121,7 +100,7 @@
                 </button>
                 <ul class="lang-switch"><li>|</li>
                     <li>
-                        <a href="https://goodmorning-hwt.github.io/tech-blog/en/" title="English"
+                        <a href="http://localhost:1313/tech-blog/en/" title="English"
                             aria-label="English">En</a>
                     </li>
                 </ul>
@@ -157,6 +136,38 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Diffusion Model 学习笔记1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>我的 Diffusion Model 学习笔记：逐行拆解代码，搞懂背后原理 大家好！最近我一头扎进了 Diffusion Model 的世界，决定从头开始手撕代码，真正搞懂这个神奇的东西是怎么工作的。最好的学习方法就是对着代码自言自语，一边看一边问，一边想一边答。
+下面就是我“手撕”一个基础 Diffusion Model 训练过程的笔记。我把它整理了出来，希望能给同样在学习路上的朋友们一些启发。
+Part 1：搭建模型骨架 - UNet2DModel 一切始于模型的定义。在 diffusers 库中，我们可以很方便地初始化一个 U-Net 模型。它是 Diffusion Model 的核心。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 # Create a model model = UNet2DModel( sample_size=image_size, # the target image resolution in_channels=3, # the number of input channels, 3 for RGB images out_channels=3, # the number of output channels layers_per_block=2, # how many ResNet layers to use per UNet block block_out_channels=(64, 128, 128, 256), # More channels -&gt; more parameters down_block_types=( &#34;DownBlock2D&#34;, # a regular ResNet downsampling block &#34;DownBlock2D&#34;, &#34;AttnDownBlock2D&#34;, # a ResNet downsampling block with spatial self-attention &#34;AttnDownBlock2D&#34;, ), up_block_types=( &#34;AttnUpBlock2D&#34;, &#34;AttnUpBlock2D&#34;, # a ResNet upsampling block with spatial self-attention &#34;UpBlock2D&#34;, &#34;UpBlock2D&#34;, # a regular ResNet upsampling block ), ) 看到这段代码，我问了自己好几个“为什么”。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-19 20:00:00 +0800 CST'>七月 19, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Diffusion Model 学习笔记1" href="http://localhost:1313/tech-blog/posts/diffussion-note/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Diffusion Note 0
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>我的 Diffusion Model 学习笔记：逐行拆解代码，搞懂背后原理 大家好！最近我一头扎进了 Diffusion Model 的世界，决定从头开始手撕代码，真正搞懂这个神奇的东西是怎么工作的。最好的学习方法就是对着代码自言自语，一边看一边问，一边想一边答。
+下面就是我“手撕”一个基础 Diffusion Model 训练过程的笔记。我把它整理了出来，希望能给同样在学习路上的朋友们一些启发。
+Part 1：搭建模型骨架 - UNet2DModel 一切始于模型的定义。在 diffusers 库中，我们可以很方便地初始化一个 U-Net 模型。它是 Diffusion Model 的核心。
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 # Create a model model = UNet2DModel( sample_size=image_size, # the target image resolution in_channels=3, # the number of input channels, 3 for RGB images out_channels=3, # the number of output channels layers_per_block=2, # how many ResNet layers to use per UNet block block_out_channels=(64, 128, 128, 256), # More channels -&gt; more parameters down_block_types=( &#34;DownBlock2D&#34;, # a regular ResNet downsampling block &#34;DownBlock2D&#34;, &#34;AttnDownBlock2D&#34;, # a ResNet downsampling block with spatial self-attention &#34;AttnDownBlock2D&#34;, ), up_block_types=( &#34;AttnUpBlock2D&#34;, &#34;AttnUpBlock2D&#34;, # a ResNet upsampling block with spatial self-attention &#34;UpBlock2D&#34;, &#34;UpBlock2D&#34;, # a regular ResNet upsampling block ), ) 看到这段代码，我问了自己好几个“为什么”。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-07-19 16:47:30 +0800 CST'>七月 19, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Diffusion Note 0" href="http://localhost:1313/tech-blog/posts/diffusion-note-0/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">我的第一篇文章
     </h2>
   </header>
@@ -165,12 +176,12 @@
 </p>
   </div>
   <footer class="entry-footer"><span title='2025-07-18 18:54:13 +0800 CST'>七月 18, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to 我的第一篇文章" href="https://goodmorning-hwt.github.io/tech-blog/posts/my-first-post/"></a>
+  <a class="entry-link" aria-label="post link to 我的第一篇文章" href="http://localhost:1313/tech-blog/posts/my-first-post/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://goodmorning-hwt.github.io/tech-blog/">我的技术笔记</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/tech-blog/">我的技术笔记</a></span> · 
 
     <span>
         Powered by

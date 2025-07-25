@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>My Tech Notes</title>
-    <link>https://goodmorning-hwt.github.io/tech-blog/en/</link>
+    <link>http://localhost:1313/tech-blog/en/</link>
     <description>Recent content on My Tech Notes</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Jul 2025 18:54:13 +0800</lastBuildDate>
-    <atom:link href="https://goodmorning-hwt.github.io/tech-blog/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tech-blog/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>https://goodmorning-hwt.github.io/tech-blog/en/posts/my-first-post/</link>
+      <link>http://localhost:1313/tech-blog/en/posts/my-first-post/</link>
       <pubDate>Fri, 18 Jul 2025 18:54:13 +0800</pubDate>
-      <guid>https://goodmorning-hwt.github.io/tech-blog/en/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/tech-blog/en/posts/my-first-post/</guid>
       <description>&lt;p&gt;This is the content of my first post.&lt;/p&gt;</description>
     </item>
   </channel>
