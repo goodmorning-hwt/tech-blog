@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tech-blog/posts/diffussion-note/</loc>
-    <lastmod>2025-07-19T20:00:00+08:00</lastmod>
+    <loc>http://localhost:1313/tech-blog/posts/convert-jupyter-notebook-to-markdown/</loc>
+    <lastmod>2025-07-25T09:54:47+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tech-blog/posts/</loc>
-    <lastmod>2025-07-19T20:00:00+08:00</lastmod>
+    <lastmod>2025-07-25T09:54:47+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -19,7 +19,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/tech-blog/</loc>
-    <lastmod>2025-07-19T20:00:00+08:00</lastmod>
+    <lastmod>2025-07-25T09:54:47+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -30,9 +30,6 @@
                 hreflang="zh-cn"
                 href="http://localhost:1313/tech-blog/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/tech-blog/posts/diffusion-note-0/</loc>
-    <lastmod>2025-07-19T16:47:30+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tech-blog/posts/my-first-post/</loc>
     <lastmod>2025-07-18T18:54:13+08:00</lastmod>

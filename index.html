@@ -136,34 +136,24 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Diffusion Model 学习笔记1
+    <h2 class="entry-hint-parent">Convert Jupyter Notebook to Markdown
     </h2>
   </header>
   <div class="entry-content">
-    <p>我的 Diffusion Model 学习笔记：逐行拆解代码，搞懂背后原理 大家好！最近我一头扎进了 Diffusion Model 的世界，决定从头开始手撕代码，真正搞懂这个神奇的东西是怎么工作的。最好的学习方法就是对着代码自言自语，一边看一边问，一边想一边答。
-下面就是我“手撕”一个基础 Diffusion Model 训练过程的笔记。我把它整理了出来，希望能给同样在学习路上的朋友们一些启发。
-Part 1：搭建模型骨架 - UNet2DModel 一切始于模型的定义。在 diffusers 库中，我们可以很方便地初始化一个 U-Net 模型。它是 Diffusion Model 的核心。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 # Create a model model = UNet2DModel( sample_size=image_size, # the target image resolution in_channels=3, # the number of input channels, 3 for RGB images out_channels=3, # the number of output channels layers_per_block=2, # how many ResNet layers to use per UNet block block_out_channels=(64, 128, 128, 256), # More channels -&gt; more parameters down_block_types=( &#34;DownBlock2D&#34;, # a regular ResNet downsampling block &#34;DownBlock2D&#34;, &#34;AttnDownBlock2D&#34;, # a ResNet downsampling block with spatial self-attention &#34;AttnDownBlock2D&#34;, ), up_block_types=( &#34;AttnUpBlock2D&#34;, &#34;AttnUpBlock2D&#34;, # a ResNet upsampling block with spatial self-attention &#34;UpBlock2D&#34;, &#34;UpBlock2D&#34;, # a regular ResNet upsampling block ), ) 看到这段代码，我问了自己好几个“为什么”。
+    <p>将Jupyter Notebook（.ipynb文件）转换为Markdown（.md文件）的工具有很多，其中最常用和最官方的工具是 nbconvert。除了nbconvert之外，还有一些其他的命令行工具、VS Code插件和在线转换器可供选择。
+1. 使用官方工具 nbconvert nbconvert 是一个由Jupyter社区开发的强大工具，可以将Jupyter Notebook转换为多种格式，包括Markdown、HTML、PDF、LaTeX等。它可以通过命令行或Python脚本来使用。
+a. 命令行使用 这是最直接和常用的方法。首先，你需要确保已经安装了nbconvert。通常，如果你安装了Jupyter，nbconvert也会被一并安装。如果没有，可以通过pip进行安装：
+1 pip install nbconvert 安装后，在你的终端或命令行中，进入到Jupyter Notebook文件所在的目录，然后运行以下命令：
+1 jupyter nbconvert --to markdown your_notebook_name.ipynb 这条命令会生成一个名为 your_notebook_name.md 的Markdown文件。这个文件会包含你的Markdown单元格内容以及代码单元格和其输出。
+一些常用选项:
+--output-dir: 指定输出文件的目录。 --output: 指定输出文件的名称。 --no-input: 在输出中不包含代码单元格。 b. 在Jupyter Notebook/Lab中直接导出 你也可以在Jupyter Notebook或JupyterLab的界面中直接进行转换：
+在Jupyter Notebook中:
+打开你的 .ipynb 文件。 点击菜单栏的 “File” -&gt; “Download as”。 选择 “Markdown (.md)&#34;。 在JupyterLab中:
+打开你的 .ipynb 文件。 点击菜单栏的 “File” -&gt; “Export Notebook As…&#34;。 选择 “Export to Markdown”。 c. 使用Python脚本 你还可以在Python脚本中调用nbconvert库来实现转换，这在自动化工作流程中非常有用。
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-07-19 20:00:00 +0800 CST'>七月 19, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Diffusion Model 学习笔记1" href="http://localhost:1313/tech-blog/posts/diffussion-note/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Diffusion Note 0
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>我的 Diffusion Model 学习笔记：逐行拆解代码，搞懂背后原理 大家好！最近我一头扎进了 Diffusion Model 的世界，决定从头开始手撕代码，真正搞懂这个神奇的东西是怎么工作的。最好的学习方法就是对着代码自言自语，一边看一边问，一边想一边答。
-下面就是我“手撕”一个基础 Diffusion Model 训练过程的笔记。我把它整理了出来，希望能给同样在学习路上的朋友们一些启发。
-Part 1：搭建模型骨架 - UNet2DModel 一切始于模型的定义。在 diffusers 库中，我们可以很方便地初始化一个 U-Net 模型。它是 Diffusion Model 的核心。
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 # Create a model model = UNet2DModel( sample_size=image_size, # the target image resolution in_channels=3, # the number of input channels, 3 for RGB images out_channels=3, # the number of output channels layers_per_block=2, # how many ResNet layers to use per UNet block block_out_channels=(64, 128, 128, 256), # More channels -&gt; more parameters down_block_types=( &#34;DownBlock2D&#34;, # a regular ResNet downsampling block &#34;DownBlock2D&#34;, &#34;AttnDownBlock2D&#34;, # a ResNet downsampling block with spatial self-attention &#34;AttnDownBlock2D&#34;, ), up_block_types=( &#34;AttnUpBlock2D&#34;, &#34;AttnUpBlock2D&#34;, # a ResNet upsampling block with spatial self-attention &#34;UpBlock2D&#34;, &#34;UpBlock2D&#34;, # a regular ResNet upsampling block ), ) 看到这段代码，我问了自己好几个“为什么”。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-07-19 16:47:30 +0800 CST'>七月 19, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to Diffusion Note 0" href="http://localhost:1313/tech-blog/posts/diffusion-note-0/"></a>
+  <footer class="entry-footer"><span title='2025-07-25 09:54:47 +0800 CST'>七月 25, 2025</span></footer>
+  <a class="entry-link" aria-label="post link to Convert Jupyter Notebook to Markdown" href="http://localhost:1313/tech-blog/posts/convert-jupyter-notebook-to-markdown/"></a>
 </article>
 
 <article class="post-entry"> 
